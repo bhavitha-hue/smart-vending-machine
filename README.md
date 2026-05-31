@@ -19,7 +19,7 @@ The complete design is implemented using **Verilog HDL** and verified through si
 
 ##  System Architecture
 
-![Block Diagram](docs/block_diagram.png)
+![Block Diagram](docs/BLOCK_DIAGRAM_VM.png)
 
 ```
 ### Major Modules
@@ -41,7 +41,7 @@ The complete design is implemented using **Verilog HDL** and verified through si
 
 ##  FSM Flowchart
 
-![FSM Flowchart](docs/FSM-VM.png)
+![FSM Flowchart](docs/FSM_VM.png)
 
 ```
 ### State Sequence
@@ -285,9 +285,6 @@ smart_vending_machine/
 └── .gitignore
 ```
 
-## Simulation Waveform
-
-![Simulation Waveform](docs/WAVEFORM_VM.png)
 
 # Testbench Results
 
