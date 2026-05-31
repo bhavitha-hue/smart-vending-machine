@@ -21,6 +21,7 @@ The complete design is implemented using **Verilog HDL** and verified through si
 
 ![Block Diagram](docs/block_diagram.png)
 
+```
 ### Major Modules
 
  Module                                           Function 
@@ -36,14 +37,15 @@ The complete design is implemented using **Verilog HDL** and verified through si
  Timeout Controller                               Handles inactivity timeouts 
  Transaction Logger                               Records transaction information 
  Admin Controller                                 Unlocks and manages machine 
-
+```
 
 ##  FSM Flowchart
 
-![FSM Flowchart](docs/fsm_flowchart.png)
+![FSM Flowchart](docs/FSM-VM.png)
 
-### State Sequence
 ```
+### State Sequence
+
 IDLE
  ↓
 SELECT_PRODUCT
@@ -91,8 +93,8 @@ IDLE
 - Timeout monitoring
 - Fraud detection integration
 
-##  Inventory Management
 ```
+##  Inventory Management
 Initial stock:
 
  Product        Stock 
@@ -101,16 +103,16 @@ Initial stock:
  Product 1       5 
  Product 2       7 
  Product 3       0 
-```
 
 Features:
 
 - Real-time stock checking
 - Stock deduction after dispensing
 - Out-of-stock handling
-
-## Recommendation Engine
 ```
+
+```
+## Recommendation Engine
 
 The recommendation engine suggests complementary products based on user selections.
 
@@ -122,10 +124,11 @@ Selected Product  Suggested Product
  Product 1           Product 0 
  Product 2           Product 3 
  Product 3           Product 2 
-``
-
-## Dynamic Pricing
 ```
+
+```
+## Dynamic Pricing
+
 Prices are adjusted according to demand.
 
  Demand Level       Price Adjustment 
@@ -203,13 +206,12 @@ Records:
 
 ✅ Dynamic Pricing
 
----
 
 ##  Simulation Results
 
 ### Sample Waveform
 
-![Waveform](docs/waveform.png)
+![Waveform](docs/WAVEFORM_VM.png)
 
 Observed Signals:
 
@@ -221,8 +223,8 @@ Observed Signals:
 - timeout
 - stock_available
 
-##  Tools Used
 ```
+##  Tools Used
 
   Tool               Purpose 
   Verilog HDL        RTL Design 
@@ -248,8 +250,9 @@ vvp sim
 powershell
 gtkwave wave.vcd
 
+``` 
 ##  Repository Structure
-```
+
 smart_vending_machine/
 │
 ├── src/
@@ -281,13 +284,6 @@ smart_vending_machine/
 ├── README.md
 └── .gitignore
 ```
-## Block Diagram
-
-![Block Diagram](docs/BLOCK_DIAGRAM_VM.png)
-
-## FSM Flowchart
-
-![FSM Flowchart](docs/FSM_VM.png)
 
 ## Simulation Waveform
 
