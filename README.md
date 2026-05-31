@@ -19,7 +19,7 @@ The complete design is implemented using **Verilog HDL** and verified through si
 
 ##  System Architecture
 
-![Block Diagram](docs/BLOCK_DIAGRAM_VM.png)
+![Block Diagram](docs/BLOCK_DIAGRAM_VM.jpeg)
 
 ```
 ### Major Modules
@@ -41,41 +41,8 @@ The complete design is implemented using **Verilog HDL** and verified through si
 
 ##  FSM Flowchart
 
-![FSM Flowchart](docs/FSM_VM.png)
+![FSM Flowchart](docs/FSM_VM.jpeg)
 
-```
-### State Sequence
-
-IDLE
- ↓
-SELECT_PRODUCT
- ↓
-CHECK_STOCK
- ↓
-DYNAMIC_PRICING
- ↓
-RECOMMENDED_PRODUCT
- ↓
-SELECT_PAYMENT
- ↓
-INSERT_CASH / GENERATE_QR
- ↓
-VERIFY_PAYMENT
- ↓
-PAYMENT_SUCCESS
- ↓
-DISPENSE_PRODUCT
- ↓
-UPDATE_INVENTORY
- ↓
-GENERATE_RECEIPT
- ↓
-TRANSACTION_LOG
- ↓
-UPDATE_HISTORY
- ↓
-IDLE
-```
 
 ##  Payment Modes
 
@@ -273,8 +240,8 @@ smart_vending_machine/
 │   ├── top_module_tb.v
 │  
 ├── docs/
-│   ├── BLOCK_DIAGRAM_VM.png
-│   ├── FSM_VM.png
+│   ├── BLOCK_DIAGRAM_VM.jpeg
+│   ├── FSM_VM.jpeg
 │   ├── WAVEFORM_VM.png
 │   ├── TESTCASE1_VM.png
 │   ├── TESTCASE_2_VM.png
